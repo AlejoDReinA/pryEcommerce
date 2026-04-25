@@ -1,12 +1,20 @@
 :root{
     --NaranjaIn-color-principal: rgb(219, 155, 34); 
+    --dark-color-principal: #212529;
 }
 body{
+    border: 0;
+    margin: 0;
     padding: 0;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar{
     background-color: var(--NaranjaIn-color-principal);
+    
+}
+.navbar-brand{
+    color: var(--dark-color-principal);
+    font-weight: bold;
 }
 .navbar .nav-link.active{
     color: var(--NaranjaIn-color-principal)
@@ -24,4 +32,9 @@ body{
     
     color: var(--NaranjaIn-color-principal);
 }
+.card-header{
+    background-color: var(--NaranjaIn-color-principal);
+    color: var(--dark-color-principal);
+}
+
 
