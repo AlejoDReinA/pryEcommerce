@@ -1,0 +1,27 @@
+:root{
+    --NaranjaIn-color-principal: rgb(219, 155, 34); 
+}
+body{
+    padding: 0;
+
+}
+.navbar{
+    background-color: var(--NaranjaIn-color-principal);
+}
+.navbar .nav-link.active{
+    color: var(--NaranjaIn-color-principal)
+}
+
+.btn{
+    margin-right: 17px;
+}
+
+.input-group-text:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.subtitle{
+    
+    color: var(--NaranjaIn-color-principal);
+}
+

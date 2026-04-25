@@ -3,25 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Tienda gamer</title>
 </head>
-<body>
+<body data-bs-theme="dark">
     <header>
-        <h1>Tienda gamer</h1>
-        <img src="Imagenes/icono.jpg" width="40" height="40">
-        <nav>
-            <a href="index.html">Inicio</a> <a href="registro.html">Registrarse</a> 
-            <a href="login.html">Iniciar sesión</a>
-            <button>Cerrar sesión</button>
-            <br><br>        
-            <a href="cpu.html">Procesadores</a> <a href="gpu.html">Placas de video</a>
-            <a href="motherboard.html">Motherboard</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!--agregar titulo e icono al navbar-->
+                <a href="#" class="navbar-brand"> 
+                    <img src="Imagenes\shop.svg" alt="logo" width="30" height="24">
+                    Tienda gamer
+                </a>
+                <!--agregar barra de busqueda-->
+                <form class="d-flex w-50 ms-auto" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Buscar producto" aria-label="search">
+                        <!--agregar icono de lupa-->
+                        <span class="input-group-text">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </form>
+                <a href="login.html" class="btn btn-success ms-auto"> <i class="bi bi-box-arrow-in-left"></i></a>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart3"></i></a>    
+
+                <a href="#" class="btn btn-danger"><i class="bi bi-box-arrow-right"></i></a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <!--Boton para colapsar el navbar-->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                    
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center nav-underline" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cpu.html" class="nav-link">Procesadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gpu.html" class="nav-link">Placas de video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="motherboard.html" class="nav-link">Motherboards</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Destacados</h2>
-        </section>
+        <div class="d-flex align-items-center">
+            <h2 class=" subtitle mx-3">Productos Destacados</h2>
+            <hr class="flex-grow-1 me-3">
+        </div>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 my-2 mx-1">
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_631999-MLA99867252311_112025-F.webp" alt="producto">
+                        <div class="cardbody">
+                            <h5 class="card-title mt-1 mx-2">AMD Ryzen x xxxx</h5>
+                            <p class="card-text mx-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sint atque illum. Voluptatem unde harum saepe tempora ea vel, facere illo, adipisci nobis asperiores in nisi facilis eaque nemo officiis!</p>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <p class="price">$2000</p>
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" min="0" max="3" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_631999-MLA99867252311_112025-F.webp" alt="producto">
+                        <div class="cardbody">
+                            <h5 class="card-title mt-1 mx-2">AMD Ryzen x xxxx</h5>
+                            <p class="card-text mx-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sint atque illum. Voluptatem unde harum saepe tempora ea vel, facere illo, adipisci nobis asperiores in nisi facilis eaque nemo officiis!</p>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <p class="price">$2000</p>
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" min="0" max="3" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_631999-MLA99867252311_112025-F.webp" alt="producto">
+                        <div class="cardbody">
+                            <h5 class="card-title mt-1 mx-2">AMD Ryzen x xxxx</h5>
+                            <p class="card-text mx-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sint atque illum. Voluptatem unde harum saepe tempora ea vel, facere illo, adipisci nobis asperiores in nisi facilis eaque nemo officiis!</p>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <p class="price">$2000</p>
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" min="0" max="3" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_631999-MLA99867252311_112025-F.webp" alt="producto">
+                        <div class="cardbody">
+                            <h5 class="card-title mt-1 mx-2">AMD Ryzen x xxxx</h5>
+                            <p class="card-text mx-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sint atque illum. Voluptatem unde harum saepe tempora ea vel, facere illo, adipisci nobis asperiores in nisi facilis eaque nemo officiis!</p>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <p class="price">$2000</p>
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" min="0" max="3" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_631999-MLA99867252311_112025-F.webp" alt="producto">
+                        <div class="cardbody">
+                            <h5 class="card-title mt-1 mx-2">AMD Ryzen x xxxx</h5>
+                            <p class="card-text mx-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sint atque illum. Voluptatem unde harum saepe tempora ea vel, facere illo, adipisci nobis asperiores in nisi facilis eaque nemo officiis!</p>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <p class="price">$2000</p>
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" min="0" max="3" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            
+        </div>
     </main>
+    <!--Zona de scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
