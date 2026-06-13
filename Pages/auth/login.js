@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const passIngresada = document.querySelector('input[name="pass"]').value;
 
         if (emailIngresado === usuarioValido.email && passIngresada === usuarioValido.password) {
+            sessionStorage.setItem('usuarioLogueado', JSON.stringify({ email: emailIngresado }));
             window.location.href = '../../index.html';
+            alert('Sesión iniciada')
         } else {
             alert('Email o contraseña incorrectos.');
         }

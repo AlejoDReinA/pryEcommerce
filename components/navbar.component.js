@@ -1,15 +1,15 @@
 const navElement = [
     {title: 'Inicio', link:'../index.html'},
-    {title: 'Procesadores', link:'../Pages/cpu.html'},
-    {title: 'Tarjetas de video', link:'../Pages/gpu.html'},
-    {title: 'Motherboards', link:'../Pages/motherboard.html'},
+    {title: 'Procesadores', link:'../pages/cpu.html'},
+    {title: 'Tarjetas de video', link:'../pages/gpu.html'},
+    {title: 'Motherboards', link:'../pages/motherboard.html'},
 ]
 const navbar = `
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!--agregar titulo e icono al navbar-->
-            <a href="#" class="navbar-brand"> 
-                <img src="../Imagenes/shop.svg" alt="logo" width="30" height="24">
+            <a href="/index.html" class="navbar-brand"> 
+                <img src="../imagenes/shop.svg" alt="logo" width="30" height="24">
                 Tienda gamer
             </a>
             <!--agregar barra de busqueda-->
@@ -22,8 +22,8 @@ const navbar = `
                     </span>
                 </div>
             </form>
-            <a href="../Pages/auth/login.html" class="btn btn-success ms-auto"> <i class="bi bi-box-arrow-in-left"></i></a>
-            <a href="#" class="btn btn-dark"><i class="bi bi-cart3"></i></a>    
+            <a href="../pages/auth/login.html" class="btn btn-success ms-auto"> <i class="bi bi-box-arrow-in-left"></i></a>
+            <a href="../pages/carrito.html" class="btn btn-dark"><i class="bi bi-cart3"></i></a>    
 
             <a id="btnLogout" href="#" class="btn btn-danger"><i class="bi bi-box-arrow-right"></i></a>
         </div>
@@ -57,8 +57,10 @@ const navbar = `
 let navbarContainer = document.querySelector('header')
 window.addEventListener('load', ()=> {
     navbarContainer.innerHTML = navbar
-    //agregar funcionalidad al boton de logout para que redirija al Inicio//
+    //agregar funcionalidad al boton de logout para que redirija al Inicio y borre la sesión del usuario//
     document.getElementById('btnLogout').addEventListener('click', ()=>{
-        window.location.href = '../Pages/auth/login.html'
+        sessionStorage.removeItem('usuarioLogueado')
+        window.location.href = '../pages/auth/login.html'
     })
+    
 })

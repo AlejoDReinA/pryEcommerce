@@ -1,0 +1,85 @@
+{
+    "procesadores": [
+        {
+            "id": 1,
+            "titulo": "AMD Ryzen 5 7600X",
+            "descripcion": "Procesador de 6 núcleos y 12 hilos, ideal para gaming y multitarea.",
+            "precio": 299,
+            "imagen": "/imagenes/cpu_am4.jpg"
+        },
+        {
+            "id": 2,
+            "titulo": "AMD Ryzen 7 9800X3D",
+            "descripcion": "Procesador con tecnología 3D V-Cache, el mejor para gaming.",
+            "precio": 479,
+            "imagen": "/imagenes/cpu_am5.jpg"
+        },
+        {
+            "id": 3,
+            "titulo": "Intel Core i5 13600K",
+            "descripcion": "Procesador Intel de 13va generación con 14 núcleos híbridos.",
+            "precio": 319,
+            "imagen": "/imagenes/cpu_intel.png"
+        }
+    ],
+    "placasDeVideo": [
+        {
+            "id": 4,
+            "titulo": "Nvidia RTX 5070",
+            "descripcion": "Placa de video de última generación con 12GB GDDR7.",
+            "precio": 549,
+            "imagen": "/imagenes/gpu_nvidia.png"
+        },
+        {
+            "id": 5,
+            "titulo": "AMD Radeon RX 9060 XT",
+            "descripcion": "Placa AMD de gama media con 16GB GDDR6 y arquitectura RDNA 4.",
+            "precio": 599,
+            "imagen": "/imagenes/gpu_amd.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Intel Arc B580",
+            "descripcion": "Placa Intel con 12GB GDDR6, excelente relación calidad-precio.",
+            "precio": 249,
+            "imagen": "/imagenes/intel_arc.jpg"
+        },
+        {
+            "id": 7,
+            "titulo": "Nvidia RTX 5060",
+            "descripcion": "Placa de video de gama media para 1080p con 8GB de vram .",
+            "precio": 299,
+            "imagen": "/imagenes/gpu_nvidia_5060.jpg"
+        },
+        {
+            "id": 8,
+            "titulo": "Amd Radeon Rx 9070 Xt",
+            "descripcion": "Placa AMD de gama alta para 2k con 16GB de vram GDDR6.",
+            "precio": 599,
+            "imagen": "/imagenes/gpu_amd_9070.jpg"
+        }
+    ],
+    "motherboards": [
+        {
+            "id": 9,
+            "titulo": "Motherboard AM5 Gigabyte B650",
+            "descripcion": "Placa madre AM5 con soporte DDR5 y WiFi 6E integrado.",
+            "precio": 160,
+            "imagen": "/imagenes/mother_am5.png"
+        },
+        {
+            "id": 10,
+            "titulo": "Motherboard AM4 Gigabyte B550m",
+            "descripcion": "Placa madre económica con socket AM4 y soporte hasta para Ryzen 7000.",
+            "precio": 125,
+            "imagen": "/imagenes/mother_am4.jpg"
+        },
+        {
+            "id": 11,
+            "titulo": "Motherboard Asus B860M-A",
+            "descripcion": "Placa madre para Intel 12va y 13va generación con soporte DDR5.",
+            "precio": 175,
+            "imagen": "/imagenes/mother_intel.png"
+        }
+    ]
+}
