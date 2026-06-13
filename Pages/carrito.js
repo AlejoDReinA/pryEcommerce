@@ -60,4 +60,24 @@ window.modificarCantidad = function(id, delta) {
     renderizarCarrito();
 };
 
-window.addEventListener('load', renderizarCarrito);
+window.addEventListener('load', () => {
+    renderizarCarrito();
+    const formBusqueda = document.querySelector('form[role="search"]');
+    const inputBusqueda = document.querySelector('input[type="search"]');
+
+    formBusqueda.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const termino = inputBusqueda.value.trim();
+        if (termino) {
+            window.location.href = `busqueda.html?q=${termino}`;
+        }
+    });
+    const btnLupa = document.querySelector('.input-group-text');
+
+    btnLupa.addEventListener('click', () => {
+        const termino = inputBusqueda.value.trim();
+        if (termino) {
+            window.location.href = `busqueda.html?q=${termino}`;
+        }
+    });
+});

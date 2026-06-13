@@ -12,7 +12,7 @@ export const cardComponent = (id, ImageLink, tituloProducto, text, precio) =>{
                 <div class="card-footer">
                     <div class="row text-center">
                         <div class="col">
-                            <p class="price">$${precio}</p>
+                            <p class="price mt-2">$${precio}</p>
                         </div>
                         <div class="col">
                             <div class="input-group">

@@ -1,12 +1,22 @@
 import { cardComponent } from "../components/card.component.js";
+import { renderizarFiltros } from "../components/filtros.components.js";
 
-let cardContainer = document.getElementById('cardContainer')
+const cardContainer = document.getElementById('cardContainer');
+const filtrosMarca = document.getElementById('filtrosMarca');
+let todasMother = [];
 
-window.addEventListener('load', ()=>{
-    fetch('../data/productos.json').then(response => response.json()).then(data => {
-        const cards = data.motherboards.map(p => {
-            return cardComponent(p.id, p.imagen, p.titulo, p.descripcion, p.precio);
-        }).join('');
-        cardContainer.innerHTML = cards;
-    });
-})
+function renderizarCards(productos) {
+    cardContainer.innerHTML = productos.map(p =>
+        cardComponent(p.id, p.imagen, p.titulo, p.descripcion, p.precio)
+    ).join('');
+}
+
+window.addEventListener('load', () => {
+    fetch('../data/productos.json')
+        .then(r => r.json())
+        .then(data => {
+            todasMother = data.motherboards;
+            renderizarCards(todasMother);
+            renderizarFiltros(todasMother, filtrosMarca, cardContainer, renderizarCards);
+        });
+});

@@ -54,13 +54,32 @@ const navbar = `
         </div>
     </nav>
 ` 
+
 let navbarContainer = document.querySelector('header')
+
 window.addEventListener('load', ()=> {
     navbarContainer.innerHTML = navbar
     //agregar funcionalidad al boton de logout para que redirija al Inicio y borre la sesión del usuario//
     document.getElementById('btnLogout').addEventListener('click', ()=>{
         sessionStorage.removeItem('usuarioLogueado')
         window.location.href = '../pages/auth/login.html'
-    })
-    
-})
+    });
+    const formBusqueda = document.querySelector('form[role="search"]');
+    const inputBusqueda = document.querySelector('input[type="search"]');
+
+    formBusqueda.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const termino = inputBusqueda.value.trim();
+        if (termino) {
+            window.location.href = `../Pages/busqueda.html?q=${termino}`;
+        }
+    });
+    const btnLupa = document.querySelector('.input-group-text');
+
+    btnLupa.addEventListener('click', () => {
+        const termino = inputBusqueda.value.trim();
+        if (termino) {
+            window.location.href = `../Pages/busqueda.html?q=${termino}`;
+        }
+    });
+});
