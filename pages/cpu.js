@@ -12,7 +12,7 @@ function renderizarCards(productos) {
 }
 
 window.addEventListener('load', () => {
-    fetch('../data/productos.json')
+    fetch('/pryEcommerce/data/productos.json')
         .then(r => r.json())
         .then(data => {
             todosProcesadores = data.procesadores;

@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 
     tituloBusqueda.textContent = `Resultados para: "${termino}"`;
 
-    fetch('../data/productos.json')
+    fetch('/pryEcommerce/data/productos.json')
         .then(r => r.json())
         .then(data => {
         
