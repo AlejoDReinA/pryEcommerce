@@ -71,7 +71,7 @@ window.addEventListener('load', ()=> {
         e.preventDefault();
         const termino = inputBusqueda.value.trim();
         if (termino) {
-            window.location.href = `/pryEcommerce/Pages/busqueda.html?q=${termino}`;
+            window.location.href = `/pryEcommerce/pages/busqueda.html?q=${termino}`;
         }
     });
     const btnLupa = document.querySelector('.input-group-text');
@@ -79,7 +79,7 @@ window.addEventListener('load', ()=> {
     btnLupa.addEventListener('click', () => {
         const termino = inputBusqueda.value.trim();
         if (termino) {
-            window.location.href = `/pryEcommerce/Pages/busqueda.html?q=${termino}`;
+            window.location.href = `/pryEcommerce/pages/busqueda.html?q=${termino}`;
         }
     });
 });
