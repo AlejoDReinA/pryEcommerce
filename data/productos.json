@@ -147,7 +147,7 @@
             "titulo": "Motherboard Gigabyte Z790M",
             "descripcion": "Placa madre que soporta procesadores Intel de 12.ª a 14.ª generación.",
             "precio": 200,
-            "imagen": "/imagenes/mother_intel_i914k.png"
+            "imagen": "/pryEcommerce/imagenes/mother_intel_i914k.png"
         },
         {
             "id": 17,
