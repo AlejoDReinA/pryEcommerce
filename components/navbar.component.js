@@ -1,15 +1,15 @@
 const navElement = [
-    {title: 'Inicio', link:'../index.html'},
-    {title: 'Procesadores', link:'../pages/cpu.html'},
-    {title: 'Tarjetas de video', link:'../pages/gpu.html'},
-    {title: 'Motherboards', link:'../pages/motherboard.html'},
+    {title: 'Inicio', link:'/pryEcommerce/index.html'},
+    {title: 'Procesadores', link:'/pryEcommerce/pages/cpu.html'},
+    {title: 'Tarjetas de video', link:'/pryEcommerce/pages/gpu.html'},
+    {title: 'Motherboards', link:'/pryEcommerce/pages/motherboard.html'},
 ]
 const navbar = `
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!--agregar titulo e icono al navbar-->
-            <a href="/index.html" class="navbar-brand"> 
-                <img src="../imagenes/shop.svg" alt="logo" width="30" height="24">
+            <a href="/pryEcommerce/index.html" class="navbar-brand"> 
+                <img src="/pryEcommerce/imagenes/shop.svg" alt="logo" width="30" height="24">
                 Tienda gamer
             </a>
             <!--agregar barra de busqueda-->
@@ -22,8 +22,8 @@ const navbar = `
                     </span>
                 </div>
             </form>
-            <a href="../pages/auth/login.html" class="btn btn-success ms-auto"> <i class="bi bi-box-arrow-in-left"></i></a>
-            <a href="../pages/carrito.html" class="btn btn-dark"><i class="bi bi-cart3"></i></a>    
+            <a href="/pryEcommerce/pages/auth/login.html" class="btn btn-success ms-auto"> <i class="bi bi-box-arrow-in-left"></i></a>
+            <a href="/pryEcommerce/pages/carrito.html" class="btn btn-dark"><i class="bi bi-cart3"></i></a>    
 
             <a id="btnLogout" href="#" class="btn btn-danger"><i class="bi bi-box-arrow-right"></i></a>
         </div>
@@ -62,7 +62,7 @@ window.addEventListener('load', ()=> {
     //agregar funcionalidad al boton de logout para que redirija al Inicio y borre la sesión del usuario//
     document.getElementById('btnLogout').addEventListener('click', ()=>{
         sessionStorage.removeItem('usuarioLogueado')
-        window.location.href = '../pages/auth/login.html'
+        window.location.href = '/pryEcommerce/pages/auth/login.html'
     });
     const formBusqueda = document.querySelector('form[role="search"]');
     const inputBusqueda = document.querySelector('input[type="search"]');
@@ -71,7 +71,7 @@ window.addEventListener('load', ()=> {
         e.preventDefault();
         const termino = inputBusqueda.value.trim();
         if (termino) {
-            window.location.href = `../Pages/busqueda.html?q=${termino}`;
+            window.location.href = `/pryEcommerce/Pages/busqueda.html?q=${termino}`;
         }
     });
     const btnLupa = document.querySelector('.input-group-text');
@@ -79,7 +79,7 @@ window.addEventListener('load', ()=> {
     btnLupa.addEventListener('click', () => {
         const termino = inputBusqueda.value.trim();
         if (termino) {
-            window.location.href = `../Pages/busqueda.html?q=${termino}`;
+            window.location.href = `/pryEcommerce/Pages/busqueda.html?q=${termino}`;
         }
     });
 });

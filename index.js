@@ -1,4 +1,4 @@
-import { cardComponent } from "./components/card.component.js";
+import { cardComponent } from "/pryEcommerce/components/card.component.js";
 
 const cardContainer = document.getElementById('cardContainer')
 

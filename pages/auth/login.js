@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (emailIngresado === usuarioValido.email && passIngresada === usuarioValido.password) {
             sessionStorage.setItem('usuarioLogueado', JSON.stringify({ email: emailIngresado }));
-            window.location.href = '../../index.html';
+            window.location.href = '/pryEcommerce/index.html';
             alert('Sesión iniciada')
         } else {
             alert('Email o contraseña incorrectos.');

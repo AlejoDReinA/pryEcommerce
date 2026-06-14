@@ -1,4 +1,4 @@
-import { carritoItemComponent } from "../../components/carrito.components.js";
+import { carritoItemComponent } from "/pryEcommerce/components/carrito.components.js";
 
 const carritoContainer = document.getElementById('carritoContainer');
 const totalCarrito = document.getElementById('totalCarrito');

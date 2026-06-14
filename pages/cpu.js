@@ -1,5 +1,5 @@
-import { cardComponent } from "../components/card.component.js";
-import { renderizarFiltros } from "../components/filtros.components.js"
+import { cardComponent } from "/pryEcommerce/components/card.component.js";
+import { renderizarFiltros } from "/pryEcommerce/components/filtros.components.js"
 
 const cardContainer = document.getElementById('cardContainer');
 const filtrosMarca = document.getElementById('filtrosMarca');
