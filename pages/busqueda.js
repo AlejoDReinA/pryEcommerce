@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
             btnLupa.addEventListener('click', () => {
                 const termino = inputBusqueda.value.trim();
                 if (termino) {
-                    window.location.href = `busqueda.html?q=${termino}`;
+                    window.location.href = `/pryEcommerce/busqueda.html?q=${termino}`;
                 }
             });
 
